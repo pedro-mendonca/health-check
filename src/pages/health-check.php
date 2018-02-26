@@ -140,7 +140,7 @@ $db_dropin  = file_exists( WP_CONTENT_DIR . '/db.php' );
 						$status   = 'warning';
 						$notice[] = sprintf(
 							// translators: %1$s: The database engine in use (MySQL or MariaDB). %2$s: Database server recommended version number.
-							esc_html__( 'For performance and security reasons, we strongly recommend running %1$s version %2$s or higher.', 'health-check' ),
+							esc_html__( 'For best performance we recommend using %1$s version %2$s or higher.', 'health-check' ),
 							( $mariadb ? 'MariaDB' : 'MySQL' ),
 							$health_check_mysql_rec_version
 						);
